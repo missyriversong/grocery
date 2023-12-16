@@ -1,0 +1,9 @@
+h1, h2{
+  size: 2rem;
+}
+
+.container {
+  width: 70%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}

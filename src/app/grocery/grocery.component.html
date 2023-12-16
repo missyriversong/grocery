@@ -1,0 +1,40 @@
+<div class="container text-center">
+  <h1>Next Shopping Trip</h1>
+</div>
+
+<div class="container">
+  <h2>Add to List</h2>
+  <div class="input-group">
+    <input
+      [(ngModel)]="item"
+      type="text"
+      class="form-control"
+      aria-label="enter grocery items"
+      placeholder="enter grocery items"
+      id="search"
+    />
+    <div class="group-btn">
+      <button class="btn btn-secondary" type="button" (click)="onClick()">
+        <i class="bi bi-plus">add</i>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2>What to Buy?</h2>
+  <ul class="list-group">
+    <li *ngFor="let item of items" class="list-group-item">
+      <span> {{ item.name }} </span>
+    </li>
+  </ul>
+</div>
+
+<!--
+  https://icons.getbootstrap.com/?q=add
+  https://icons.getbootstrap.com/icons/plus/
+
+  didn't work:
+  https://www.freecodecamp.org/news/how-to-add-bootstrap-css-framework-to-an-angular-application/
+  https://www.npmjs.com/package/@ng-bootstrap/ng-bootstrap
+-->
